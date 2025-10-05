@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: Inter;
+	margin: 0;
+	color: #1B232B;
+;}
+.container{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1480px;
+        padding: 0 20px;
+}
+header{
+	margin-top: 20px;
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}	
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo-title{
+	margin-left: 30px;
+	font-size: 36px;
+	font-weight: 500;
+}
+nav{
+	font-size: 24px;
+	font-weight: 500;
+
+}
+a{
+
+	text-decoration: none;
+}
+nav a {
+	margin-left: 100px;
+	color: #1B232B;
+}
+.starter .container{
+	position: relative;
+	overflow: hidden;
+}
+.starter-subtitle{
+	margin-top:20vh;
+	color: #661D31;
+	font-size: 36px;
+	font-weight: 500;
+
+}
+.starter-title{
+	display: inline-block;
+	font-size: 64px;
+	font-weight: 500;
+	
+}
+.starter-text{
+	margin-top: 20px;
+	font-size: 20px;
+	padding-bottom: 20vh;
+  max-width: 100%;
+  overflow-wrap: anywhere; /* prevents overflow on very narrow viewports */
+
+}
+.starter-img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-bottom:-10px;
+}
+.starter-img img { display: block; max-width: 100%; height: auto; }
+.desc-inner{
+	display: flex;
+
+}
+.desc{
+	background-color: #1B232B;
+	color: white;
+	padding-bottom: 50px;
+}
+.desc-inner{
+	display: flex;
+	justify-content: space-between;
+}
+.desc-title{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	color: white;                        /* text fill */
+  -webkit-text-stroke: 1px white;      /* stroke width & color */
+  text-stroke: 1px white;  
+	font-family: Geo;
+	text-stroke: 1px;
+	font-size: 96px;
+}
+.desc-types-title{
+	color: white;                        /* text fill */ 
+	font-family: Geo;
+	-webkit-text-stroke: 1px white;      /* stroke width & color */
+ 
+	font-size: 48px;	
+}
+.desc-text, .desc-types-text{
+	color: white;
+	font-size: 20px;
+}
+.desc-text{
+	margin-bottom: 30px;
+}
+.tilt-highlight{
+  position: relative;
+  display: inline-block;
+  padding: 0 .25em;
+  text-decoration: none;
+  z-index: 0;             /* create a stacking context */
+  isolation: isolate;     /* so ::before stays behind only this span */
+}
+
+.tilt-highlight::before{
+  content: "";
+  position: absolute;
+  inset: -.05em -.05em;   /* smaller than before */
+  background: #7b2033;
+  transform: rotate(-2deg); /* gentler tilt */
+  transform-origin: 50% 60%;
+  z-index: -1;            /* behind the text, not other elements */
+  pointer-events: none;   /* don’t intercept clicks */
+}
+.desc-text, .desc-types, .desc-structure{
+	z-index: 1;
+}
+.desc-types-text{
+	margin: 10px 0 20px;
+}
+.types-cards{
+	display: flex;
+}
+.types-card{
+	margin-right: 20px;
+}
+.desc-structure{
+	margin-top: 50px;
+}
+.structure-title{
+	font-size: 48px;
+	font-family: Geo;
+	-webkit-text-stroke: 1px white;      /* stroke width & color */
+  text-align: center;
+}
+.structure-cards{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.structure-card{
+	font-family: Geo;
+	margin: 10px 0;
+	border-radius: 20px;
+	width: 432px;
+	max-width: 100%;
+	text-align: center;
+	background-color: white;
+	color: #1B232B;
+	padding: 25px 0;
+	font-size: 30px;
+}
+.button{
+	color: #661D31;
+	padding: 20px 100px;
+	border: 1px solid #661D31;
+	transition-duration: 0.3s;
+}
+.button:hover{
+	background-color: #661D31;
+	text-decoration: none;
+	color: white;
+}
+.underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.08em;          /* distance from text */
+  height: 2px;              /* line thickness */
+  width: 100%;
+  background: currentColor; /* matches text color */
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .3s ease;
+}
+
+.underline:hover::after,
+.underline:focus-visible::after {
+  transform: scaleX(1);
+}
+.about-title, .about-subtitle{
+	color: #661D31;
+	font-family: Geo;
+	-webkit-text-stroke: 1px #661D31;      /* stroke width & color */
+  }
+.about-title{
+	margin-top: 50px;
+	font-size: 96px;
+}
+.about-subtitle{
+
+	font-size: 48px;
+}
+.about-text{
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+.about{
+	margin-bottom: 40px;
+}
